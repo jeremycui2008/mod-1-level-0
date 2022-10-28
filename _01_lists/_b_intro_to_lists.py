@@ -19,16 +19,17 @@ def test_2_generate_a_list():
 # TODO Complete the function so it returns the product of all the numbers in
 #  the list multiplied together
 def test_3_product(list_1):
-    list_1 = [4,8,2,3,7]
+    total=1
     for i in range (len(list_1)):
-
-    return None
+        total*=list_1[i]
+    return total
 
 
 # TODO Complete the function so it returns a list with all the elements from
 #  list_1 followed by items in list_2
 def test_4_combine_lists(list_1, list_2):
-    return list()
+    guh=list_1+list_2
+    return list(guh)
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
 
