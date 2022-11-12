@@ -33,9 +33,9 @@ def remove_guest(list_of_guests):
 #            Guest 3. Jin
 #         b. If there are no guests, print "There are no guests"
 def print_guests(list_of_guests):
-
-    if list_of_guests==None:
-        print("There are no guests")
+    if len(list_of_guests)>0:
+        for i in range (len(list_of_guests)):
+            print("Guest " + str(i+1) +".  " + list_of_guests[i])
     else:
         print("There are no guests")
     pass
