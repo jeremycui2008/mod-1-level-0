@@ -7,8 +7,11 @@ from tkinter import messagebox
 #  word_to_guess = orange (a string)
 #  return          ______ (a string with 6 underscores)
 def setup_new_word(word_to_guess):
-
-    return str()
+    num_characters = len(word_to_guess)
+    underscore=''
+    for i in range (num_characters):
+        underscore +='_ '
+    return str(underscore)
 
 # TODO 2) Complete the function to return whether the letter is in
 #  the word to guess
@@ -16,6 +19,7 @@ def setup_new_word(word_to_guess):
 #  letter = o (a string)
 #  return True
 def check_letter_in_word(word_to_guess, letter):
+    var=word_to_guess.count(str(letter))
 
     return False
 
