@@ -19,8 +19,9 @@ def setup_new_word(word_to_guess):
 #  letter = o (a string)
 #  return True
 def check_letter_in_word(word_to_guess, letter):
-    var=word_to_guess.count(str(letter))
-
+    if letter in word_to_guess:
+        print("that's in the word")
+        return True
     return False
 
 # TODO 3) Complete the function to return the current guess with the
@@ -31,6 +32,7 @@ def check_letter_in_word(word_to_guess, letter):
 #       return o__nge (a string)
 #  Remember that strings can't be changed directly!
 def replace_letter_in_word(word_to_guess, current_guess, letter):
+
 
     return str()
 
